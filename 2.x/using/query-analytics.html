@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://pmm-doc.netlify.app/2.x/using/query-analytics.html">
       
       <link rel="icon" href="../_images/percona-favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.db9e7362.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -684,6 +684,8 @@
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -784,6 +786,13 @@
           <li class="md-nav__item">
   <a href="#tables-tab" class="md-nav__link">
     Tables Tab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plan-tab" class="md-nav__link">
+    Plan Tab
   </a>
   
 </li>
@@ -2597,6 +2606,8 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -2697,6 +2708,13 @@
           <li class="md-nav__item">
   <a href="#tables-tab" class="md-nav__link">
     Tables Tab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plan-tab" class="md-nav__link">
+    Plan Tab
   </a>
   
 </li>
@@ -2861,6 +2879,8 @@
 <p>Each row in the table is a metric. The contents depends on the chosen dimension.</p>
 </li>
 </ul>
+<p>For PostgreSQL queries (when using <em>pg_stat_monitor</em>) the top query will also be shown in the details section if the query was called by an outer query.</p>
+<p><div class="lightgallery"><a data-sub-html="image" href="../_images/PMM_Query_Analytics_Tabs_Details_TopQuery.png"><img alt="image" src="../_images/PMM_Query_Analytics_Tabs_Details_TopQuery.png" /></a></div></p>
 <h3 id="examples-tab">Examples Tab<a class="headerlink" href="#examples-tab" title="Permanent link">&para;</a></h3>
 <p>(For <em>Query</em> dimension.)</p>
 <p>The <em>Examples</em> tab shows an example of the selected query’s fingerprint or table element.</p>
@@ -2888,6 +2908,10 @@
 <p>(For <em>Query</em> dimension.)</p>
 <p>The <em>Tables</em> tab shows information on the tables and indexes involved in the selected query.</p>
 <p><div class="lightgallery"><a data-sub-html="image" href="../_images/PMM_Query_Analytics_Tabs_Tables.jpg"><img alt="image" src="../_images/PMM_Query_Analytics_Tabs_Tables.jpg" /></a></div></p>
+<h3 id="plan-tab">Plan Tab<a class="headerlink" href="#plan-tab" title="Permanent link">&para;</a></h3>
+<p>(For <em>Query</em> dimension.)</p>
+<p>The <em>Plan</em> tab shows the plan for PostgreSQL queries (only available when using <em>pg_stat_monitor</em>).</p>
+<p><div class="lightgallery"><a data-sub-html="image" href="../_images/PMM_Query_Analytics_Tabs_Plan.png"><img alt="image" src="../_images/PMM_Query_Analytics_Tabs_Plan.png" /></a></div></p>
 <h2 id="query-analytics-for-mongodb">Query Analytics for MongoDB<a class="headerlink" href="#query-analytics-for-mongodb" title="Permanent link">&para;</a></h2>
 <p>MongoDB is conceptually different from relational database management systems, such as MySQL and MariaDB.</p>
 <p>Relational database management systems store data in tables that represent single entities. Complex objects are represented by linking tables.</p>
@@ -2901,7 +2925,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-09-21
+      Last update: 2021-11-02
     
   </small>
 </div>
@@ -2982,10 +3006,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.8397ff9e.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.1e84347e.min.js"></script>
+      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
       
         <script src="../js/version-select.js"></script>
       
