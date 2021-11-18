@@ -13,14 +13,14 @@
         <meta name="author" content="Percona LLC">
       
       
-        <link rel="canonical" href="https://pmm-doc.netlify.app/2.x/using/dbaas.html">
+        <link rel="canonical" href="https://pmm-doc.netlify.app/2.x/release-notes/2.24.0.html">
       
       <link rel="icon" href="../_images/percona-favicon.ico">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
-        <title>DBaaS - Percona Monitoring and Management</title>
+        <title>PMM 2.24.0 - Percona Monitoring and Management</title>
       
     
     
@@ -75,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dbaas" class="md-skip">
+        <a href="#percona-monitoring-and-management-2240" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              DBaaS
+              PMM 2.24.0
             
           </span>
         </div>
@@ -587,14 +587,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -602,7 +600,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="index.html">Using</a>
+          <a href="../using/index.html">Using</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -623,7 +621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="interface.html" class="md-nav__link">
+      <a href="../using/interface.html" class="md-nav__link">
         User Interface
       </a>
     </li>
@@ -637,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="alerting.html" class="md-nav__link">
+      <a href="../using/alerting.html" class="md-nav__link">
         Integrated Alerting
       </a>
     </li>
@@ -651,7 +649,7 @@
   
   
     <li class="md-nav__item">
-      <a href="backup.html" class="md-nav__link">
+      <a href="../using/backup.html" class="md-nav__link">
         Backup and Restore
       </a>
     </li>
@@ -665,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="query-analytics.html" class="md-nav__link">
+      <a href="../using/query-analytics.html" class="md-nav__link">
         Query Analytics
       </a>
     </li>
@@ -677,170 +675,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          DBaaS
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="dbaas.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../using/dbaas.html" class="md-nav__link">
         DBaaS
       </a>
-      
-        
-
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#activate-dbaas" class="md-nav__link">
-    Activate DBaaS
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#open-the-dbaas-dashboard" class="md-nav__link">
-    Open the DBaaS dashboard
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kubernetes-clusters" class="md-nav__link">
-    Kubernetes clusters
-  </a>
-  
-    <nav class="md-nav" aria-label="Kubernetes clusters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add-a-kubernetes-cluster" class="md-nav__link">
-    Add a Kubernetes cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unregister-a-kubernetes-cluster" class="md-nav__link">
-    Unregister a Kubernetes cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#view-a-kubernetes-clusters-configuration" class="md-nav__link">
-    View a Kubernetes cluster's configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#manage-allowed-component-versions" class="md-nav__link">
-    Manage allowed component versions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-operator-status" class="md-nav__link">
-    Kubernetes operator status
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-operator-update" class="md-nav__link">
-    Kubernetes operator update
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#db-clusters" class="md-nav__link">
-    DB clusters
-  </a>
-  
-    <nav class="md-nav" aria-label="DB clusters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add-a-db-cluster" class="md-nav__link">
-    Add a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-a-db-cluster" class="md-nav__link">
-    Delete a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit-a-db-cluster" class="md-nav__link">
-    Edit a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#restart-a-db-cluster" class="md-nav__link">
-    Restart a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#suspend-or-resume-a-db-cluster" class="md-nav__link">
-    Suspend or resume a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#update-a-db-cluster" class="md-nav__link">
-    Update a DB Cluster
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -852,7 +691,7 @@
   
   
     <li class="md-nav__item">
-      <a href="security-threat-tool.html" class="md-nav__link">
+      <a href="../using/security-threat-tool.html" class="md-nav__link">
         Security Threat Tool
       </a>
     </li>
@@ -2126,12 +1965,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
       
       
@@ -2139,7 +1980,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../release-notes/index.html">Release Notes</a>
+          <a href="index.html">Release Notes</a>
           
             <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
@@ -2158,11 +1999,74 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../release-notes/2.24.0.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          PMM 2.24.0
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="2.24.0.html" class="md-nav__link md-nav__link--active">
         PMM 2.24.0
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#release-highlights" class="md-nav__link">
+    Release Highlights
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#new-features" class="md-nav__link">
+    New Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improvements" class="md-nav__link">
+    Improvements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bugs-fixed" class="md-nav__link">
+    Bugs Fixed
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2174,7 +2078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.23.0.html" class="md-nav__link">
+      <a href="2.23.0.html" class="md-nav__link">
         PMM 2.23.0
       </a>
     </li>
@@ -2188,7 +2092,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.22.0.html" class="md-nav__link">
+      <a href="2.22.0.html" class="md-nav__link">
         PMM 2.22.0
       </a>
     </li>
@@ -2202,7 +2106,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.21.0.html" class="md-nav__link">
+      <a href="2.21.0.html" class="md-nav__link">
         PMM 2.21.0
       </a>
     </li>
@@ -2216,7 +2120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.20.0.html" class="md-nav__link">
+      <a href="2.20.0.html" class="md-nav__link">
         PMM 2.20.0
       </a>
     </li>
@@ -2230,7 +2134,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.19.0.html" class="md-nav__link">
+      <a href="2.19.0.html" class="md-nav__link">
         PMM 2.19.0
       </a>
     </li>
@@ -2244,7 +2148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.18.0.html" class="md-nav__link">
+      <a href="2.18.0.html" class="md-nav__link">
         PMM 2.18.0
       </a>
     </li>
@@ -2258,7 +2162,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.17.0.html" class="md-nav__link">
+      <a href="2.17.0.html" class="md-nav__link">
         PMM 2.17.0
       </a>
     </li>
@@ -2272,7 +2176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.16.0.html" class="md-nav__link">
+      <a href="2.16.0.html" class="md-nav__link">
         PMM 2.16.0
       </a>
     </li>
@@ -2286,7 +2190,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.15.1.html" class="md-nav__link">
+      <a href="2.15.1.html" class="md-nav__link">
         PMM 2.15.1
       </a>
     </li>
@@ -2300,7 +2204,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.15.0.html" class="md-nav__link">
+      <a href="2.15.0.html" class="md-nav__link">
         PMM 2.15.0
       </a>
     </li>
@@ -2314,7 +2218,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.14.0.html" class="md-nav__link">
+      <a href="2.14.0.html" class="md-nav__link">
         PMM 2.14.0
       </a>
     </li>
@@ -2328,7 +2232,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.13.0.html" class="md-nav__link">
+      <a href="2.13.0.html" class="md-nav__link">
         PMM 2.13.0
       </a>
     </li>
@@ -2342,7 +2246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.12.0.html" class="md-nav__link">
+      <a href="2.12.0.html" class="md-nav__link">
         PMM 2.12.0
       </a>
     </li>
@@ -2356,7 +2260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.11.1.html" class="md-nav__link">
+      <a href="2.11.1.html" class="md-nav__link">
         PMM 2.11.1
       </a>
     </li>
@@ -2370,7 +2274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.11.0.html" class="md-nav__link">
+      <a href="2.11.0.html" class="md-nav__link">
         PMM 2.11.0
       </a>
     </li>
@@ -2384,7 +2288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.10.1.html" class="md-nav__link">
+      <a href="2.10.1.html" class="md-nav__link">
         PMM 2.10.1
       </a>
     </li>
@@ -2398,7 +2302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.10.0.html" class="md-nav__link">
+      <a href="2.10.0.html" class="md-nav__link">
         PMM 2.10.0
       </a>
     </li>
@@ -2412,7 +2316,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.9.1.html" class="md-nav__link">
+      <a href="2.9.1.html" class="md-nav__link">
         PMM 2.9.1
       </a>
     </li>
@@ -2426,7 +2330,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.9.0.html" class="md-nav__link">
+      <a href="2.9.0.html" class="md-nav__link">
         PMM 2.9.0
       </a>
     </li>
@@ -2440,7 +2344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.8.0.html" class="md-nav__link">
+      <a href="2.8.0.html" class="md-nav__link">
         PMM 2.8.0
       </a>
     </li>
@@ -2454,7 +2358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.7.0.html" class="md-nav__link">
+      <a href="2.7.0.html" class="md-nav__link">
         PMM 2.7.0
       </a>
     </li>
@@ -2468,7 +2372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.6.1.html" class="md-nav__link">
+      <a href="2.6.1.html" class="md-nav__link">
         PMM 2.6.1
       </a>
     </li>
@@ -2482,7 +2386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.6.0.html" class="md-nav__link">
+      <a href="2.6.0.html" class="md-nav__link">
         PMM 2.6.0
       </a>
     </li>
@@ -2496,7 +2400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.5.0.html" class="md-nav__link">
+      <a href="2.5.0.html" class="md-nav__link">
         PMM 2.5.0
       </a>
     </li>
@@ -2510,7 +2414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.4.0.html" class="md-nav__link">
+      <a href="2.4.0.html" class="md-nav__link">
         PMM 2.4.0
       </a>
     </li>
@@ -2524,7 +2428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.3.0.html" class="md-nav__link">
+      <a href="2.3.0.html" class="md-nav__link">
         PMM 2.3.0
       </a>
     </li>
@@ -2538,7 +2442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.2.2.html" class="md-nav__link">
+      <a href="2.2.2.html" class="md-nav__link">
         PMM 2.2.2
       </a>
     </li>
@@ -2552,7 +2456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.2.1.html" class="md-nav__link">
+      <a href="2.2.1.html" class="md-nav__link">
         PMM 2.2.1
       </a>
     </li>
@@ -2566,7 +2470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.2.0.html" class="md-nav__link">
+      <a href="2.2.0.html" class="md-nav__link">
         PMM 2.2.0
       </a>
     </li>
@@ -2580,7 +2484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.1.0.html" class="md-nav__link">
+      <a href="2.1.0.html" class="md-nav__link">
         PMM 2.1.0
       </a>
     </li>
@@ -2594,7 +2498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.0.1.html" class="md-nav__link">
+      <a href="2.0.1.html" class="md-nav__link">
         PMM 2.0.1
       </a>
     </li>
@@ -2608,7 +2512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-notes/2.0.0.html" class="md-nav__link">
+      <a href="2.0.0.html" class="md-nav__link">
         PMM 2.0.0
       </a>
     </li>
@@ -2650,126 +2554,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#activate-dbaas" class="md-nav__link">
-    Activate DBaaS
+  <a href="#release-highlights" class="md-nav__link">
+    Release Highlights
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#open-the-dbaas-dashboard" class="md-nav__link">
-    Open the DBaaS dashboard
+  <a href="#new-features" class="md-nav__link">
+    New Features
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubernetes-clusters" class="md-nav__link">
-    Kubernetes clusters
+  <a href="#improvements" class="md-nav__link">
+    Improvements
   </a>
-  
-    <nav class="md-nav" aria-label="Kubernetes clusters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add-a-kubernetes-cluster" class="md-nav__link">
-    Add a Kubernetes cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#unregister-a-kubernetes-cluster" class="md-nav__link">
-    Unregister a Kubernetes cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#view-a-kubernetes-clusters-configuration" class="md-nav__link">
-    View a Kubernetes cluster's configuration
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#manage-allowed-component-versions" class="md-nav__link">
-    Manage allowed component versions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-operator-status" class="md-nav__link">
-    Kubernetes operator status
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kubernetes-operator-update" class="md-nav__link">
-    Kubernetes operator update
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#db-clusters" class="md-nav__link">
-    DB clusters
+  <a href="#bugs-fixed" class="md-nav__link">
+    Bugs Fixed
   </a>
-  
-    <nav class="md-nav" aria-label="DB clusters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add-a-db-cluster" class="md-nav__link">
-    Add a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delete-a-db-cluster" class="md-nav__link">
-    Delete a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#edit-a-db-cluster" class="md-nav__link">
-    Edit a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#restart-a-db-cluster" class="md-nav__link">
-    Restart a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#suspend-or-resume-a-db-cluster" class="md-nav__link">
-    Suspend or resume a DB Cluster
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#update-a-db-cluster" class="md-nav__link">
-    Update a DB Cluster
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2785,288 +2593,83 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/percona/pmm-doc/edit/main/docs/using/dbaas.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/percona/pmm-doc/edit/main/docs/release-notes/2.24.0.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="dbaas">DBaaS<a class="headerlink" href="#dbaas" title="Permanent link">&para;</a></h1>
-<div class="admonition caution alert alert-warning">
-<p class="admonition-title">Caution</p>
-<p>DBaaS functionality is currently in <a href="../details/glossary.html#technical-preview">technical preview</a> and is subject to change.</p>
-</div>
-<p>The DBaaS dashboard is where you add, remove, and operate on Kubernetes and database clusters.</p>
-<h2 id="activate-dbaas">Activate DBaaS<a class="headerlink" href="#activate-dbaas" title="Permanent link">&para;</a></h2>
-<p>The DBaaS feature is turned off by default. To turn it on:</p>
-<ol>
-<li>
-<p>Go to <i class="uil uil-cog"></i> <em>Configuration</em> → <i class="uil uil-setting"></i> <em>Settings</em> → <em>Advanced Settings</em>.</p>
-</li>
-<li>
-<p>Click the <i class="uil uil-toggle-off"></i> toggle in the <em>Technical preview features</em> section of the page.</p>
-</li>
-</ol>
-<h2 id="open-the-dbaas-dashboard">Open the DBaaS dashboard<a class="headerlink" href="#open-the-dbaas-dashboard" title="Permanent link">&para;</a></h2>
-<p>From the left menu, select <i class="uil uil-database"></i> <em>DBaaS</em>.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_Kubernetes_Cluster_Panel.jpg"><img alt="" src="../_images/PMM_DBaaS_Kubernetes_Cluster_Panel.jpg" /></a></div></p>
-<h2 id="kubernetes-clusters">Kubernetes clusters<a class="headerlink" href="#kubernetes-clusters" title="Permanent link">&para;</a></h2>
-<h3 id="add-a-kubernetes-cluster">Add a Kubernetes cluster<a class="headerlink" href="#add-a-kubernetes-cluster" title="Permanent link">&para;</a></h3>
-<div class="admonition note alert alert-primary">
-<p>PXC and PSMDB operators are installed as part of the Kubernetes cluster registration process. It enables you to deploy database clusters into the Kubernetes cluster.</p>
-<p>If a public address is set VM Operator is also installed as part of the Kubernetes cluster registration process. It lets you monitor a kubernetes cluster via PMM.</p>
-</div>
-<ol>
-<li>
-<p>Click <em>Register new Kubernetes Cluster</em>.</p>
-</li>
-<li>
-<p>Enter values for the <em>Kubernetes Cluster Name</em> and <em>Kubeconfig file</em> in the corresponding fields.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_Kubernetes_Cluster_Details.jpg"><img alt="" src="../_images/PMM_DBaaS_Kubernetes_Cluster_Details.jpg" /></a></div></p>
-</li>
-<li>
-<p>Click <em>Register</em>.</p>
-</li>
-<li>
-<p>A message will momentarily display telling you whether the registration was successful or not.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_Kubernetes_Cluster_Added.png"><img alt="" src="../_images/PMM_DBaaS_Kubernetes_Cluster_Added.png" /></a></div></p>
-</li>
-</ol>
-<h3 id="unregister-a-kubernetes-cluster">Unregister a Kubernetes cluster<a class="headerlink" href="#unregister-a-kubernetes-cluster" title="Permanent link">&para;</a></h3>
-<div class="admonition caution alert alert-warning">
-<p class="admonition-title">Important</p>
-<p>You can&rsquo;t unregister a Kubernetes cluster if there DB clusters associated with it.</p>
-</div>
-<ol>
-<li>
-<p>Click <em>Unregister</em>.</p>
-</li>
-<li>
-<p>Confirm the action by clicking <em>Proceed</em>, or abandon by clicking <em>Cancel</em>.</p>
-</li>
-</ol>
-<h3 id="view-a-kubernetes-clusters-configuration">View a Kubernetes cluster&rsquo;s configuration<a class="headerlink" href="#view-a-kubernetes-clusters-configuration" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>Find the row with the Kubernetes cluster you want to see.</p>
-</li>
-<li>
-<p>In the <em>Actions</em> column, open the <i class="uil uil-ellipsis-v"></i> menu and click <em>Show configuration</em>.</p>
-</li>
-</ol>
-<h3 id="manage-allowed-component-versions">Manage allowed component versions<a class="headerlink" href="#manage-allowed-component-versions" title="Permanent link">&para;</a></h3>
-<p>Administrators can select allowed and default versions of components versions for each cluster.</p>
-<ol>
-<li>
-<p>Find the row with the Kubernetes cluster you want to manage.</p>
-</li>
-<li>
-<p>In the <em>Actions</em> column, open the <i class="uil uil-ellipsis-v"></i> menu and click <em>Manage versions</em>.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_Kubernetes_Manage_Versions.png"><img alt="" src="../_images/PMM_DBaaS_Kubernetes_Manage_Versions.png" /></a></div></p>
-</li>
-<li>
-<p>Select an <em>Operator</em> and <em>Component</em> from the drop-down menus.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_Kubernetes_Manage_Components_Versions.png"><img alt="" src="../_images/PMM_DBaaS_Kubernetes_Manage_Components_Versions.png" /></a></div></p>
-</li>
-<li>
-<p>Activate or deactivate allowed versions, and select a default in the <em>Default</em> menu.</p>
-</li>
-<li>
-<p>Click <em>Save</em>.</p>
-</li>
-</ol>
-<h3 id="kubernetes-operator-status">Kubernetes operator status<a class="headerlink" href="#kubernetes-operator-status" title="Permanent link">&para;</a></h3>
-<p>The Kubernetes Cluster tab shows the status of operators.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_Kubernetes_Cluster_Operator_Status.png"><img alt="" src="../_images/PMM_DBaaS_Kubernetes_Cluster_Operator_Status.png" /></a></div></p>
-<h3 id="kubernetes-operator-update">Kubernetes operator update<a class="headerlink" href="#kubernetes-operator-update" title="Permanent link">&para;</a></h3>
-<p>When a new version of the operator is available the <em>Operators</em> column shows a message with this information. Click the message to go to the operator release notes to find out more about the update.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_Kubernetes_Cluster_Operator_Update.png"><img alt="" src="../_images/PMM_DBaaS_Kubernetes_Cluster_Operator_Update.png" /></a></div></p>
-<p>To update the cluster:</p>
-<ol>
-<li>
-<p>Find the row with the operator you want to update.</p>
-</li>
-<li>
-<p>Click the <em>Update</em> button in front of the operator.</p>
-</li>
-<li>
-<p>Confirm the action by clicking <em>Update</em>, or abandon by clicking <em>Cancel</em>.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_Kubernetes_Cluster_Operator_Update_Confirmation.png"><img alt="" src="../_images/PMM_DBaaS_Kubernetes_Cluster_Operator_Update_Confirmation.png" /></a></div></p>
-</li>
-</ol>
-<h2 id="db-clusters">DB clusters<a class="headerlink" href="#db-clusters" title="Permanent link">&para;</a></h2>
-<h3 id="add-a-db-cluster">Add a DB Cluster<a class="headerlink" href="#add-a-db-cluster" title="Permanent link">&para;</a></h3>
-<p>You must create at least one Kubernetes cluster to create a DB cluster.</p>
-<p>To monitor a DB cluster, set up a <a href="../how-to/configure.html#public-address">public address</a> for PMM Server first.</p>
-<ol>
-<li>
-<p>Select the <em>DB Cluster</em> tab.</p>
-</li>
-<li>
-<p>Click <em>Create DB Cluster</em>.</p>
-</li>
-<li>
-<p>In section 1, <em>Basic Options</em>:</p>
-<ol>
-<li>
-<p>Enter a value for <em>Cluster name</em>. A cluster name:</p>
+                <h1 id="percona-monitoring-and-management-2240">Percona Monitoring and Management 2.24.0<a class="headerlink" href="#percona-monitoring-and-management-2240" title="Permanent link">&para;</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+  <colgroup>
+    <col class="field-name">
+    <col class="field-body">
+  </colgroup>
+  <tbody valign="top">
+    <tr class="field-odd field">
+      <th class="field-name">Date:</th>
+      <td class="field-body">November 18, 2021</td>
+    </tr>
+    <tr class="field-even field">
+      <th class="field-name">Installation:</th>
+      <td class="field-body">
+        <a class="reference external" href="https://www.percona.com/software/pmm/quickstart">Installing Percona Monitoring and Management</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Percona Monitoring and Management (PMM) is a free and open-source platform for managing and monitoring MySQL, MongoDB, and PostgreSQL performance.</p>
+<h2 id="release-highlights">Release Highlights<a class="headerlink" href="#release-highlights" title="Permanent link">&para;</a></h2>
 <ul>
-<li>must begin with a lowercase letter;</li>
-<li>can comprise lowercase letters, numbers and dashes;</li>
-<li>must end with an alphanumeric character.</li>
-</ul>
-</li>
+<li><strong>Enhanced PostgreSQL monitoring</strong></li>
+<li>Beginning with this release, PMM now supports monitoring of PostgreSQL 14, both - Community edition and <a href="https://www.percona.com/software/postgresql-distribution">Percona Distribution for PostgreSQL</a>.</li>
 <li>
-<p>Select a cluster from the <em>Kubernetes Cluster</em> menu.</p>
-</li>
-<li>
-<p>Select a database type from the <em>Database Type</em> menu.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_DB_Cluster_Basic_Options_Filled.jpg"><img alt="" src="../_images/PMM_DBaaS_DB_Cluster_Basic_Options_Filled.jpg" /></a></div></p>
-</li>
-</ol>
-</li>
-<li>
-<p>Expand section 2, <em>Advanced Options</em>.</p>
-<ol>
-<li>
-<p>Select <em>Topology</em>, either <em>Cluster</em> or <em>Single Node</em>.</p>
-</li>
-<li>
-<p>Select the number of nodes. (The lower limit is 3.)</p>
-</li>
-<li>
-<p>Select <em>External Access</em> if you want to make your DB cluster available outside of Kubernetes cluster.</p>
-<p>By default, only internal access is provided.</p>
-<p><em>External Access</em> can&rsquo;t be granted for local Kubernetes clusters (e.g. minikube).</p>
-</li>
-<li>
-<p>Select a preset for <em>Resources per Node</em>.</p>
-<p><em>Small</em>, <em>Medium</em> and <em>Large</em> are fixed preset values for <em>Memory</em>, <em>CPU</em>, and <em>Disk</em>.</p>
-<p>Values for the <em>Custom</em> preset can be edited.</p>
-<p>Beside each resource type is an estimate of the required and available resources represented numerically in absolute and percentage values, and graphically as a colored, segmented bar showing the projected ratio of used to available resources. A red warning triangle <i style="color: red" class="uil uil-exclamation-triangle"></i> is shown if the requested resources exceed those available.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_DB_Cluster_Advanced_Options.png"><img alt="" src="../_images/PMM_DBaaS_DB_Cluster_Advanced_Options.png" /></a></div></p>
-</li>
-</ol>
-</li>
-<li>
-<p>When both <em>Basic Options</em> and <em>Advanced Options</em> section icons are green, the <em>Create Cluster</em> button becomes active. (If inactive, check the values for fields in sections whose icon is red.)</p>
-<p>Click <em>Create Cluster</em> to create your cluster.</p>
-</li>
-<li>
-<p>A row appears with information on your cluster:</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_DB_Cluster_Created.png"><img alt="" src="../_images/PMM_DBaaS_DB_Cluster_Created.png" /></a></div></p>
+<p>We&rsquo;ve made significant improvements in exposed data and added additional features if you monitor PostgreSQL together with the <a href="https://github.com/percona/pg_stat_monitor">pg_stat_monitor</a> extension (Part of Percona distribution for PostgreSQL). These features include:</p>
 <ul>
-<li><em>Name</em>: The cluster name.</li>
-<li><em>Database</em>: The cluster database type and version.</li>
-<li><em>Connection</em>:<ul>
-<li><em>Host</em>: The hostname.</li>
-<li><em>Port</em>: The port number.</li>
-<li><em>Username</em>: The connection username.</li>
-<li><em>Password</em>: The connection password (click the eye icon <i class="uil uil-eye"></i> to reveal).</li>
+<li>The PostgreSQL queries will have complete Query Execution Plan information. This will help with future optimization of queries and give a clear understanding of query performance </li>
+<li>Query execution histograms collection and presentation inside Query Analytics for a much more detailed understanding of query executions. </li>
+<li>Query analytics will both show and let the user drill down to the Top Query of the particular query if it&rsquo;s a subquery and have this parent query. This feature will allow users to see the dependencies between queries better and understand the impact of subqueries. </li>
+<li>Query Analytics can filter PostgreSQL queries by query commands like SELECT, UPDATE, etc., and by Application Name if it&rsquo;s set for PostgreSQL connection from the application.</li>
 </ul>
 </li>
-<li><em>DB Cluster Parameters</em>:<ul>
-<li><em>K8s cluster name</em>: The Kubernetes cluster name.</li>
-<li><em>CPU</em>: The number of CPUs allocated to the cluster.</li>
-<li><em>Memory</em>: The amount of memory allocated to the cluster.</li>
-<li><em>Disk</em>: The amount of disk space allocated to the cluster.</li>
-</ul>
-</li>
-<li><em>Cluster Status</em>:<ul>
-<li><em>PENDING</em>: The cluster is being created.</li>
-<li><em>ACTIVE</em>: The cluster is active.</li>
-<li><em>FAILED</em>: The cluster could not be created.</li>
-<li><em>DELETING</em>: The cluster is being deleted.</li>
-<li><em>UPDATING</em>: The cluster is being updated.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<h3 id="delete-a-db-cluster">Delete a DB Cluster<a class="headerlink" href="#delete-a-db-cluster" title="Permanent link">&para;</a></h3>
-<ol>
 <li>
-<p>Find the row with the database cluster you want to delete.</p>
-</li>
-<li>
-<p>In the <em>Actions</em> column, open the <i class="uil uil-ellipsis-v"></i> menu and click <em>Delete</em>.</p>
-</li>
-<li>
-<p>Confirm the action by clicking <em>Proceed</em>, or abandon by clicking <em>Cancel</em>.</p>
-<p><div class="lightgallery"><a data-sub-html="" href="../_images/PMM_DBaaS_DB_Cluster_Delete.png"><img alt="" src="../_images/PMM_DBaaS_DB_Cluster_Delete.png" /></a></div></p>
-</li>
-</ol>
-<div class="admonition danger alert alert-danger">
-<p class="admonition-title">Danger</p>
-<p>Deleting a cluster in this way also deletes any attached volumes.</p>
-</div>
-<h3 id="edit-a-db-cluster">Edit a DB Cluster<a class="headerlink" href="#edit-a-db-cluster" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>Select the <em>DB Cluster</em> tab.</p>
-</li>
-<li>
-<p>Find the row with the database cluster you want to change.</p>
-</li>
-<li>
-<p>In the <em>Actions</em> column, open the <i class="uil uil-ellipsis-v"></i> menu and click <em>Edit</em>.</p>
-</li>
-</ol>
-<p>A paused cluster can&rsquo;t be edited.</p>
-<h3 id="restart-a-db-cluster">Restart a DB Cluster<a class="headerlink" href="#restart-a-db-cluster" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>Select the <em>DB Cluster</em> tab.</p>
-</li>
-<li>
-<p>Identify the database cluster to be changed.</p>
-</li>
-<li>
-<p>In the <em>Actions</em> column, open the <i class="uil uil-ellipsis-v"></i> menu and click <em>Restart</em>.</p>
-</li>
-</ol>
-<h3 id="suspend-or-resume-a-db-cluster">Suspend or resume a DB Cluster<a class="headerlink" href="#suspend-or-resume-a-db-cluster" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>Select the <em>DB Cluster</em> tab.</p>
-</li>
-<li>
-<p>Identify the DB cluster to suspend or resume.</p>
-</li>
-<li>
-<p>In the <em>Actions</em> column, open the <i class="uil uil-ellipsis-v"></i> menu and click the required action:</p>
+<p><strong>Integrated Alerting (Technical preview):</strong></p>
 <ul>
-<li>
-<p>For active clusters, click <em>Suspend</em>.</p>
-<p><div class="lightgallery"><a data-sub-html="DBaaS Suspend" href="../_images/PMM_DBaaS_DB_Cluster_Suspend.gif"><img alt="DBaaS Suspend" src="../_images/PMM_DBaaS_DB_Cluster_Suspend.gif" /></a></div></p>
-</li>
-<li>
-<p>For paused clusters, click <em>Resume</em>.</p>
-<p><div class="lightgallery"><a data-sub-html="DBaaS Resume" href="../_images/PMM_DBaaS_DB_Cluster_Resume.gif"><img alt="DBaaS Resume" src="../_images/PMM_DBaaS_DB_Cluster_Resume.gif" /></a></div></p>
-</li>
+<li>Alerting in PMM now has an additional notification channel type - webhooks. So now, users can integrate Alerting with any tool they use for Incident management.  Read more about new notification channels and how to set them up in <a href="https://deploy-preview-626--pmm-doc.netlify.app/using/alerting.html#add-a-notification-channel">our documentation  </a></li>
 </ul>
 </li>
-</ol>
-<h3 id="update-a-db-cluster">Update a DB Cluster<a class="headerlink" href="#update-a-db-cluster" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p>Select the <em>DB Cluster</em> tab.</p>
-</li>
-<li>
-<p>Identify the DB cluster to update.</p>
-</li>
-<li>
-<p>In the <em>Actions</em> column, open the <i class="uil uil-ellipsis-v"></i> menu and click <em>Update</em>:</p>
-<p><div class="lightgallery"><a data-sub-html="DBaaS Update" href="../_images/PMM_DBaaS_DB_Cluster_Update_menu.png"><img alt="DBaaS Update" src="../_images/PMM_DBaaS_DB_Cluster_Update_menu.png" /></a></div></p>
-</li>
-<li>
-<p>Confirm the update by clicking on <em>Update</em>, or abadon by clicking <em>Cancel</em>.</p>
-<p><div class="lightgallery"><a data-sub-html="DBaaS Update Confirmation" href="../_images/PMM_DBaaS_DB_Cluster_Update_confirmation.png"><img alt="DBaaS Update Confirmation" src="../_images/PMM_DBaaS_DB_Cluster_Update_confirmation.png" /></a></div></p>
-</li>
-</ol>
-<div class="admonition seealso alert alert-info">
-<p class="admonition-title">See also</p>
-<p><a href="../setting-up/server/dbaas.html">Setting up a development environment for DBaaS</a></p>
-</div>
+</ul>
+<h2 id="new-features">New Features<a class="headerlink" href="#new-features" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://jira.percona.com/browse/PMM-8027">PMM-8027</a>: Integrated Alerting: New notification channel added: Webhooks</li>
+<li><a href="https://jira.percona.com/browse/PMM-8301">PMM-8301</a>: Add data collection support and visualization for newly added dimensions in pg_stat_monitor such as Application Name,Top Query, Plan in Query Analytics</li>
+<li><a href="https://jira.percona.com/browse/PMM-8588">PMM-8588</a>: PostgreSQL Histograms added to QAN when using pg_stat_monitor extension</li>
+<li><a href="https://jira.percona.com/browse/PMM-8632">PMM-8632</a>: New Filter: &ldquo;Command Type&rdquo; allows filtering queries based on type (SELECT, INSERT, UPDATE, DELETE, n/a) when pg_stat_monitor extension enabled</li>
+</ul>
+<h2 id="improvements">Improvements<a class="headerlink" href="#improvements" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://jira.percona.com/browse/PMM-8803">PMM-8803</a>: Backup Management: Improved error messages to indicate incompatible versions of software</li>
+<li><a href="https://jira.percona.com/browse/PMM-8636">PMM-8636</a>: Integrated Alerting: Additional context to alerts to better convey issue detected</li>
+<li><a href="https://jira.percona.com/browse/PMM-8644">PMM-8644</a>: Integrated Alerting: API should allow textual TLS configs for webhooks</li>
+<li><a href="https://jira.percona.com/browse/PMM-8122">PMM-8122</a>: Integrated Alerting: UI does not indicate a port is needed in configuration for SMTP communication channel</li>
+<li><a href="https://jira.percona.com/browse/PMM-8484">PMM-8484</a>: Added support for PostgreSQL 14 and Percona Distribution for PostgreSQL 14</li>
+<li><a href="https://jira.percona.com/browse/PMM-7297">PMM-7297</a>: Updated plugin for Clickhouse data source  from 2.1.0 to 2.3.1. This fixes some bugs and eliminates noise from warnings in logs as well as adding support of new types (DateTime64) and improved ARRAY JOIN parsing </li>
+</ul>
+<h2 id="bugs-fixed">Bugs Fixed<a class="headerlink" href="#bugs-fixed" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://jira.percona.com/browse/PMM-8975">PMM-8975</a>: Backup Management: long presentation of recurrent intervals in Backup scheduling </li>
+<li><a href="https://jira.percona.com/browse/PMM-8541">PMM-8541</a>: Navigating through PMM Settings link at Failed security checks panel takes more than 30 seconds</li>
+<li><a href="https://jira.percona.com/browse/PMM-8387">PMM-8387</a>: MySQL InnoDB Details dashboard is not in the left menu</li>
+<li><a href="https://jira.percona.com/browse/PMM-8858">PMM-8858</a>: Dashboards: No Host uptime on Homepage for RDS instances </li>
+<li><a href="https://jira.percona.com/browse/PMM-8611">PMM-8611</a>: Dashboards: PMM Agents status presented as DOWN while there is no recent data yet on the status</li>
+<li><a href="https://jira.percona.com/browse/PMM-8393">PMM-8393</a>: Integrated Alerting: Alert rules not executed after upgrading PMM Server running as Docker container</li>
+<li><a href="https://jira.percona.com/browse/PMM-8058">PMM-8058</a>: Integrated Alerting: Firing alerts disappear after PMM server restart </li>
+<li><a href="https://jira.percona.com/browse/PMM-8089">PMM-8089</a>: PMM is not exposing data for memory used by MongoDB when it&rsquo;s mapped with the journal. This was inconsistent behavior compared to older versions of PMM. </li>
+<li><a href="https://jira.percona.com/browse/PMM-9100">PMM-9100</a>: Dashboards: Binary Log related metrics on MySQL Replication dashboard are not prevented and not collected for MySQL8</li>
+<li><a href="https://jira.percona.com/browse/PMM-8633">PMM-8633</a>: Unfinished queries are included in Query Analytics for PostgreSQL with pg_stat_monitor usage because of incorrect use of state_code. </li>
+<li><a href="https://jira.percona.com/browse/PMM-8859">PMM-8859</a>: Increased memory consumption on Client-side for PostgreSQL monitoring when executing either too many custom queries or some queries against too many tables</li>
+<li><a href="https://jira.percona.com/browse/PMM-9046">PMM-9046</a>: Incorrect link to instructions about installing Image Rendering Plugin</li>
+<li><a href="https://jira.percona.com/browse/PMM-8952">PMM-8952</a>: Query Analytics: No table/indexes information for Views when PostgreSQL server monitored with pg_stat_monitor</li>
+</ul>
                 
                   
                     
@@ -3075,7 +2678,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-10-21
+      Last update: 2021-11-18
     
   </small>
 </div>
@@ -3099,7 +2702,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="query-analytics.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Query Analytics" rel="prev">
+        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Release Notes" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -3108,20 +2711,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Query Analytics
+              Release Notes
             </div>
           </div>
         </a>
       
       
         
-        <a href="security-threat-tool.html" class="md-footer__link md-footer__link--next" aria-label="Next: Security Threat Tool" rel="next">
+        <a href="2.23.0.html" class="md-footer__link md-footer__link--next" aria-label="Next: PMM 2.23.0" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Security Threat Tool
+              PMM 2.23.0
             </div>
           </div>
           <div class="md-footer__button md-icon">
