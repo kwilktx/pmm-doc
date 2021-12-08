@@ -1,10 +1,10 @@
-# MongoDB write ticket is more than 128.
+# MongoDB write tickets are greater than 128.
 
 ## Description
-This check returns a warning if the write ticket is more than 128. This can cause performance issues.
+This check returns a warning if the number of write tickets is set to more than 128. This can cause performance issues.
 Ideally the number of tickets should be based on the number of CPU available.
-The default write ticket is 128.
-It can be adjusted for your mongod and your mongos nodes.
+The default write ticket setting is 128.
+It can be adjusted for both your mongod and your mongos nodes.
 
 [https://docs.mongodb.com/manual/reference/parameters/#mongodb-parameter-param.wiredTigerConcurrentWriteTransactions](https://docs.mongodb.com/manual/reference/parameters/#mongodb-parameter-param.wiredTigerConcurrentWriteTransactions)
 
