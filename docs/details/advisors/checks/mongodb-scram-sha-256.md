@@ -5,7 +5,7 @@ This check returns a warning if a modern authentication method is not used.
 The goal is to follow updated and optimal security processes. 
 For Production systems - Ensure that auth and authentication methods are in place..
 
-MongoDB enables journaling by defaultand  "authenticationMechanisms" are set to use "SCRAM-SHA-256" by default in  MongoDB  versions (4.0 +).
+MongoDB "authenticationMechanisms" are set to use "SCRAM-SHA-256" by default in  MongoDB  versions (4.0 +).
 MongoDB v3.0changed the default auth mechanism from MONGODB-CR to SCRAM-SHA-1.
 ["https://docs.mongodb.com/drivers/go/current/fundamentals/auth/]("https://docs.mongodb.com/drivers/go/current/fundamentals/auth/)
 
@@ -30,9 +30,9 @@ db.adminCommand( { getParameter : 1,  "authenticationMechanisms" : 1 } )
 
 
 ## Resolution
-Perform the steps mentioned below to specify the SCRAM-SHA-256algorithm
+Perform the steps mentioned below to specify the desired SCRAM-SHA-256 algorithm.
 
-1. This is the default in MogoDB v4.0 and above. If it has not been otherwise designated then no change is required. \
+1. "SCRAM-SHA-256" is the default in MogoDB v4.0 and above. If it has not been otherwise designated then no change is required. \
 SCRAM-SHA-256 is a salted challenge-response authentication mechanism (SCRAM) that uses your username and password, encrypted with the SHA-256 algorithm, to authenticate your user. 
 2. To explicitly create  a “SCRAM-SHA-256 “ credential,  use the SCRAM-SHA-256 createScramSha256Credential method: 
 ```
