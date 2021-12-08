@@ -1,8 +1,8 @@
-# MongoDB read ticket is more than 128.
+# MongoDB read tickets are higher than 128.
 
 ## Description
-This check returns a warning if the read ticket is more than 128. This can cause performance issues.
-Ideally the number of tickets should be based on the number of CPU available.
+This check returns a warning if the number of read tickets is higher than 128. This can cause performance issues.
+Ideally the number of tickets should be based on the number of CPU's available.
 The default read ticket is 128.
 It can be adjusted for your mongod and your mongos nodes.
 
@@ -16,13 +16,17 @@ MONGODB_GETPARAMETER
 `db.adminCommand( { setParameter: 1, "wiredTigerConcurrentReadTransactions": "128"  } )`
 
 ## Resolution
-Please Perform the steps mentioned below to turn adjust the verbosity of your logs.
+Please Perform the steps mentioned below to adjust the number of read tickets configured for use.
 
-It is possible to do it online:
+This change can be done online while running or it can be done in the config file to take effect after the next restart.
+
+A. To make this change while running/online without downtime, please use the following command:
 
 `mongo> db.adminCommand( { setParameter: 1, "wiredTigerConcurrentReadTransactions": "128"  } );`
 
-1. Set to default. 
+B. To make this change go into effect after the next restart, use the following steps:
+
+1. As an example, Set to default. 
 Edit mongod.conf and set the below parameter.
 ```
           setParameter:
